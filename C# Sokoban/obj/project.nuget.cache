@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WHh4K09qC2a1xvBVW/rA4xH9g4j3CjdAOAn4WnzE5aqY+EYLgOek6GppL6NI1aF8GfMJfKEirp4SQ6B4+tYxxQ==",
+  "dgSpecHash": "QsW5z3IeZIqoFOf73LUJcM8X0MSZP+52YZXxgOBYPiA5zM9wln5+nUyC2gv7XH7/m8awkVoNZwgfNL+azEGpOg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\SBS-GameAcademy\\C# Sokoban\\C# Sokoban.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\C-Sokoban-Game\\C# Sokoban\\C# Sokoban.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

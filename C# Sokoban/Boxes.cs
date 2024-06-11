@@ -53,6 +53,7 @@ namespace C__Sokoban
                         if (collbox == 1)
                         {
                             y++;
+                            collbox = 0;
                         }
                     }
                     break;
@@ -63,6 +64,7 @@ namespace C__Sokoban
                         if (collbox == 2)
                         {
                             x += 2;
+                            collbox = 0;
                         }    
                     }
                     break;
@@ -73,6 +75,7 @@ namespace C__Sokoban
                         if (collbox == 3)
                         {
                             x -= 2;
+                            collbox = 0;
                         }
                     }
                     break;
@@ -83,6 +86,7 @@ namespace C__Sokoban
                         if (collbox == 4)
                         {
                             y--;
+                            collbox = 0;
                         }
                     }
                     break;
@@ -93,19 +97,19 @@ namespace C__Sokoban
 
         public void Collider(int[,] stage, int bx, int by, ref int collbox)
         {
-            if (stage[y - 1, x / 2] == stage[by, bx / 2])
+            if (y - 1 == by && x / 2 == bx / 2)
             {
                 collbox = 1;
             }
-            else if (stage[y, x / 2 - 1] == stage[by, bx / 2])
+            else if (y == by && x / 2 - 1 == bx / 2)
             {
                 collbox = 2;
             }
-            else if (stage[y, x / 2 + 1] == stage[by, bx / 2])
+            else if (y == by && x / 2 + 1 == bx / 2)
             {
                 collbox = 3;
             }
-            else if (stage[y + 1, x / 2] == stage[by, bx / 2])
+            else if (y + 1 == by && x / 2 == bx / 2)
             {
                 collbox = 4;
             }

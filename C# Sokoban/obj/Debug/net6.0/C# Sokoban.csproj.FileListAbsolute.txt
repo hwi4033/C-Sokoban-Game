@@ -27,3 +27,17 @@ C:\Users\Administrator\Desktop\SBS-GameAcademy\C# Sokoban\bin\Debug\net6.0\C# So
 C:\Users\Administrator\Desktop\SBS-GameAcademy\C# Sokoban\bin\Debug\net6.0\C# Sokoban.pdb
 C:\Users\Administrator\Desktop\SBS-GameAcademy\C# Sokoban\obj\Debug\net6.0\C# Sokoban.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\SBS-GameAcademy\C# Sokoban\obj\Debug\net6.0\ref\C# Sokoban.dll
+C:\Users\Administrator\Desktop\C-Sokoban-Game\C# Sokoban\bin\Debug\net6.0\C# Sokoban.exe
+C:\Users\Administrator\Desktop\C-Sokoban-Game\C# Sokoban\bin\Debug\net6.0\C# Sokoban.deps.json
+C:\Users\Administrator\Desktop\C-Sokoban-Game\C# Sokoban\bin\Debug\net6.0\C# Sokoban.runtimeconfig.json
+C:\Users\Administrator\Desktop\C-Sokoban-Game\C# Sokoban\bin\Debug\net6.0\C# Sokoban.dll
+C:\Users\Administrator\Desktop\C-Sokoban-Game\C# Sokoban\bin\Debug\net6.0\C# Sokoban.pdb
+C:\Users\Administrator\Desktop\C-Sokoban-Game\C# Sokoban\obj\Debug\net6.0\C# Sokoban.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\C-Sokoban-Game\C# Sokoban\obj\Debug\net6.0\C# Sokoban.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\C-Sokoban-Game\C# Sokoban\obj\Debug\net6.0\C# Sokoban.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\C-Sokoban-Game\C# Sokoban\obj\Debug\net6.0\C# Sokoban.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\C-Sokoban-Game\C# Sokoban\obj\Debug\net6.0\C# Sokoban.dll
+C:\Users\Administrator\Desktop\C-Sokoban-Game\C# Sokoban\obj\Debug\net6.0\refint\C# Sokoban.dll
+C:\Users\Administrator\Desktop\C-Sokoban-Game\C# Sokoban\obj\Debug\net6.0\C# Sokoban.pdb
+C:\Users\Administrator\Desktop\C-Sokoban-Game\C# Sokoban\obj\Debug\net6.0\C# Sokoban.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\C-Sokoban-Game\C# Sokoban\obj\Debug\net6.0\ref\C# Sokoban.dll

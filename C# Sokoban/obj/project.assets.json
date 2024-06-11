@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\SBS-GameAcademy\\C# Sokoban\\C# Sokoban.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\C-Sokoban-Game\\C# Sokoban\\C# Sokoban.csproj",
       "projectName": "C# Sokoban",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\SBS-GameAcademy\\C# Sokoban\\C# Sokoban.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\C-Sokoban-Game\\C# Sokoban\\C# Sokoban.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\SBS-GameAcademy\\C# Sokoban\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\C-Sokoban-Game\\C# Sokoban\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
