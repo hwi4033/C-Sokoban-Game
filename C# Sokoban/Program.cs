@@ -19,10 +19,14 @@ namespace C__Sokoban
         static void Main(string[] args)
         {
             int stagenum = 0;
-            int pushbox1 = 0, collbox1 = 0;
-            int pushbox2 = 0, collbox2 = 0;
-            int pushbox3 = 0, collbox3 = 0;
-            int pushbox4 = 0, collbox4 = 0;
+            int pushbox1_2 = 0, pushbox1_3 = 0, pushbox1_4 = 0;
+            int collbox1_2 = 0, collbox1_3 = 0, collbox1_4 = 0;
+            int pushbox2_1 = 0, pushbox2_3 = 0, pushbox2_4 = 0;
+            int collbox2_1 = 0, collbox2_3 = 0, collbox2_4 = 0;
+            int pushbox3_1 = 0, pushbox3_2 = 0, pushbox3_4 = 0;
+            int collbox3_1 = 0, collbox3_2 = 0, collbox3_4 = 0;
+            int pushbox4_1 = 0, pushbox4_2 = 0, pushbox4_3 = 0;
+            int collbox4_1 = 0, collbox4_2 = 0, collbox4_3 = 0;
 
             Screen screen = new Screen();
             Stages stages = new Stages();
@@ -46,16 +50,16 @@ namespace C__Sokoban
                 Console.Write(box2.Shape);
 
                 key = Console.ReadKey();
-                box1.Collider(stages.stage1, box2.X, box2.Y, ref collbox1);
-                box2.Collider(stages.stage1, box1.X, box1.Y, ref collbox2);
-
-                player.Collider(stages.stage1, box1.X, box1.Y, ref pushbox1);
-                player.Collider(stages.stage1, box2.X, box2.Y, ref pushbox2);
+                box1.Collider(stages.stage1, box2.X, box2.Y, ref collbox1_2);
+                box2.Collider(stages.stage1, box1.X, box1.Y, ref collbox2_1);
 
                 player.Move(stages.stage1, key, player.Crashbox);
+                player.Collider(stages.stage1, box1.X, box1.Y, ref pushbox1_2);
+                player.Collider(stages.stage1, box2.X, box2.Y, ref pushbox2_1);
 
-                box1.BoxMove(stages.stage1, player.X, player.Y, pushbox1, collbox1);
-                box2.BoxMove(stages.stage1, player.X, player.Y, pushbox2, collbox2);
+
+                box1.BoxMove(stages.stage1, player.X, player.Y, pushbox1_2, collbox1_2);
+                box2.BoxMove(stages.stage1, player.X, player.Y, pushbox2_1, collbox2_1);
 
                 if (box1.X == 4 && box1.Y == 3 || box1.X == 2 && box1.Y == 4)
                 {
@@ -66,7 +70,7 @@ namespace C__Sokoban
                 }
                 Console.Clear();
             }
-/*
+
             if (stagenum == 1)
             {
                 player.X = 2;
@@ -92,15 +96,29 @@ namespace C__Sokoban
                 Console.Write(box3.Shape);
 
                 key = Console.ReadKey();
-                player.Collider(stages.stage2, box1.X, box1.Y, ref pushbox1);
-                player.Collider(stages.stage2, box2.X, box2.Y, ref pushbox2);
-                player.Collider(stages.stage2, box3.X, box3.Y, ref pushbox3);
+                box1.Collider(stages.stage2, box2.X, box2.Y, ref collbox1_2);
+                box1.Collider(stages.stage2, box3.X, box3.Y, ref collbox1_3);
+                box2.Collider(stages.stage2, box1.X, box1.Y, ref collbox2_1); 
+                box2.Collider(stages.stage2, box3.X, box3.Y, ref collbox2_3);
+                box3.Collider(stages.stage2, box1.X, box1.Y, ref collbox3_1);
+                box3.Collider(stages.stage2, box2.X, box2.Y, ref collbox3_2);
+
+                player.Collider(stages.stage2, box1.X, box1.Y, ref pushbox1_2);
+                player.Collider(stages.stage2, box1.X, box1.Y, ref pushbox1_3);
+                player.Collider(stages.stage2, box2.X, box2.Y, ref pushbox2_1);
+                player.Collider(stages.stage2, box2.X, box2.Y, ref pushbox2_3);
+                player.Collider(stages.stage2, box3.X, box3.Y, ref pushbox3_1);
+                player.Collider(stages.stage2, box3.X, box3.Y, ref pushbox3_2);
 
                 player.Move(stages.stage2, key, player.Crashbox);
 
-                box1.BoxMove(stages.stage2, player.X, player.Y, pushbox1);
-                box2.BoxMove(stages.stage2, player.X, player.Y, pushbox2);
-                box3.BoxMove(stages.stage2, player.X, player.Y, pushbox3);
+                box1.BoxMove(stages.stage2, player.X, player.Y, pushbox1_2, collbox1_2);
+                box1.BoxMove(stages.stage2, player.X, player.Y, pushbox1_3, collbox1_3);
+                box2.BoxMove(stages.stage2, player.X, player.Y, pushbox2_1, collbox2_1);
+                box2.BoxMove(stages.stage2, player.X, player.Y, pushbox2_3, collbox2_3);
+                box3.BoxMove(stages.stage2, player.X, player.Y, pushbox3_1, collbox3_1);
+                box3.BoxMove(stages.stage2, player.X, player.Y, pushbox3_2, collbox3_2);
+
 
                 if (box1.X == 14 && box1.Y == 3 || box1.X == 14 && box1.Y == 4 || box1.X == 14 && box1.Y == 5)
                 {
@@ -114,7 +132,7 @@ namespace C__Sokoban
                 }
                 Console.Clear();
             }
-
+/*
             if (stagenum == 2)
             {
                 player.X = 4;
