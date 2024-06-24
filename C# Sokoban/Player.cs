@@ -50,7 +50,7 @@ namespace C__Sokoban
             set { shape = value; }
         }
 
-        public void Move(int [,] stage, ConsoleKeyInfo key, int crashbox)
+        public void Move(int[,] stage, ConsoleKeyInfo key, int crashbox)
         {
             switch (key.Key)
             {
@@ -59,7 +59,7 @@ namespace C__Sokoban
                     {
                         y--;
                         moveCount++;
-                        if(crashbox == 1)
+                        if (crashbox == 1)
                         {
                             y++;
                         }
