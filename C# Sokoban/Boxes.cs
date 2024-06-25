@@ -42,7 +42,7 @@ namespace C__Sokoban
             set { shape = value; }
         }
 
-        public void BoxMove(int[,] stage, int px, int py, int pushbox, int collbox)
+        public void BoxMove(int[,] stage, int px, int py, int pushbox)
         {
             switch (pushbox)
             {
@@ -50,40 +50,24 @@ namespace C__Sokoban
                     if (y == py && x / 2 == px / 2)
                     {
                         y--;
-                        if (collbox == 1)
-                        {
-                            y++;
-                        }
                     }
                     break;
                 case 2:
                     if (y == py && x / 2 == px / 2)
                     {
                         x -= 2;
-                        if (collbox == 2)
-                        {
-                            x += 2;
-                        }
                     }
                     break;
                 case 3:
                     if (y == py && x / 2 == px / 2)
                     {
                         x += 2;
-                        if (collbox == 3)
-                        {
-                            x -= 2;
-                        }
                     }
                     break;
                 case 4:
                     if (y == py && x / 2 == px / 2)
                     {
                         y++;
-                        if (collbox == 4)
-                        {
-                            y--;
-                        }
                     }
                     break;
                 default:
@@ -91,25 +75,25 @@ namespace C__Sokoban
             }
         }
 
-        public void Collider(int[,] stage, int bx, int by, ref int collbox)
-        {
-            if (stage[y - 1, x / 2] == stage[by, bx / 2])
-            {
-                collbox = 1;
-            }
-            else if (stage[y, x / 2 - 1] == stage[by, bx / 2])
-            {
-                collbox = 2;
-            }
-            else if (stage[y, x / 2 + 1] == stage[by, bx / 2])
-            {
-                collbox = 3;
-            }
-            else if (stage[y + 1, x / 2] == stage[by, bx / 2])
-            {
-                collbox = 4;
-            }
-            else collbox = 0;
-        }
+        // public void Collider(int[,] stage, int bx, int by, ref int collbox)
+        // {
+        //     if (stage[y - 1, x / 2] == stage[by, bx / 2])
+        //     {
+        //         collbox = 1;
+        //     }
+        //     else if (stage[y, x / 2 - 1] == stage[by, bx / 2])
+        //     {
+        //         collbox = 2;
+        //     }
+        //     else if (stage[y, x / 2 + 1] == stage[by, bx / 2])
+        //     {
+        //         collbox = 3;
+        //     }
+        //     else if (stage[y + 1, x / 2] == stage[by, bx / 2])
+        //     {
+        //         collbox = 4;
+        //     }
+        //     else collbox = 0;
+        // }
     }
 }
